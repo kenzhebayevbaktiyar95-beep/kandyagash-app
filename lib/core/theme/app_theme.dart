@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:kandyagash_app/core/constants/app_colors.dart';
 
 class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
-      primaryColor: AppColors.primary,
-      scaffoldBackgroundColor: AppColors.background,
+      scaffoldBackgroundColor: const Color(0xFFF4F7FA),
       colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primary,
+        seedColor: const Color(0xFF1E88E5),
+        brightness: Brightness.light,
       ),
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.primary,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        foregroundColor: Colors.black,
+      ),
+      textTheme: const TextTheme(
+        headlineMedium: TextStyle(
+          color: Color(0xFF1F2937),
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }

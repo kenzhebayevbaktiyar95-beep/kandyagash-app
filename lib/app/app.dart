@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kandyagash_app/core/theme/app_theme.dart';
 import 'package:kandyagash_app/features/home/presentation/screens/home_screen.dart';
 
 class KandyagashApp extends StatelessWidget {
@@ -8,10 +7,17 @@ class KandyagashApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Kandyagash Life',
+      title: 'Qandyagash Life',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
       home: const HomeScreen(),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF1E88E5),
+          brightness: Brightness.light,
+        ),
+        scaffoldBackgroundColor: const Color(0xFFF4F6F8),
+      ),
     );
   }
 }

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PaymentScreen extends StatelessWidget {
-  const PaymentScreen({super.key});
+class FoodScreen extends StatelessWidget {
+  const FoodScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Оплата')),
-      body: const Center(child: Text('Карта, Kaspi, Halyk')),
+      appBar: AppBar(title: const Text('Еда')),
+      body: const Center(child: Text('Доставка еды')),
     );
   }
 }

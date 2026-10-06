@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class PaymentScreen extends StatelessWidget {
+  const PaymentScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Профиль')),
-      body: const Center(child: Text('Личный кабинет')),
+      appBar: AppBar(title: const Text('Оплата')),
+      body: const Center(child: Text('Карта, Kaspi, Halyk')),
     );
   }
 }
