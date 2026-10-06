@@ -1,0 +1,12 @@
+# Kandyagash City App
+
+A Flutter project skeleton for a city application with taxi, food ordering, delivery, and payment features.
+
+## Getting started
+
+1. Install Flutter SDK
+2. Run:
+   ```bash
+   flutter pub get
+   flutter run
+   ```
