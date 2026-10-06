@@ -1,0 +1,75 @@
+# Qandyagash Life Backend
+
+This backend is a lightweight Express API for a city services platform.
+
+## Features
+
+- Auth mock login
+- Taxi orders
+- Food orders
+- Delivery orders
+- Payment initialization and confirmation
+- In-memory storage for demo/testing
+
+## Quick start
+
+```bash
+cd backend
+npm install
+cp .env.example .env
+npm run dev
+```
+
+## Base URL
+
+```text
+http://localhost:4000
+```
+
+## Endpoints
+
+### Health
+- GET /api/health
+
+### Auth
+- POST /api/auth/login
+
+### Orders
+- POST /api/orders/taxi
+- POST /api/orders/food
+- POST /api/orders/delivery
+- GET /api/orders
+
+### Payments
+- POST /api/payments/create
+- POST /api/payments/confirm
+- GET /api/payments
+
+## Payment providers
+
+The current implementation supports a mock provider and is ready to integrate with Kaspi or Halyk by replacing the mock logic in the route handlers.
+
+## Notes
+
+This is a demo backend for startup MVP and can be replaced with Postgres + Prisma or NestJS for production.
+
+## Example request body
+
+```json
+{
+  "userId": "123",
+  "amount": 3500,
+  "currency": "KZT",
+  "provider": "Kaspi"
+}
+```
+
+## Production recommendations
+
+- Add real authentication with JWT or Firebase Auth
+- Store data in PostgreSQL
+- Add provider SDK integration for Kaspi/Halyk
+- Add Stripe or local gateway support
+- Implement Redis for caching and rate limiting
+
+
